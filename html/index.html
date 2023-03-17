@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING LIST</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="main">
+    <div>
+        <div class="container"><img src="../img/imag1.jpeg" alt="logo"></div>
+    <div class="line">THE SMART & SIMPLE SHOPPING LIST APP</div>
+    <div class="dot">
+    <div class="dot2" id="dot2"></div>
+    <div class="dot3" id="dot3"></div>
+    </div>
+    <div class="hello"><img src="../img/imag2.jpeg" ></div>
+    </div>
+    
+    <div class="container2" id="info">
+    <h1 class="color" id="#" >Login</h1>
+    <p class="p">Please Login to Continue</p>
+    <form id="email2">
+       
+        <input type="name" id="email" placeholder="Email" required>
+        
+
+        <div class="box"><input type="password"  id="password" minlength="6" maxlength="17" placeholder="Password" requried>
+            <img src="..//img/159078.png" id ="icon"></div>
+            <div>
+            <p class="validation">Your Password must be at least 6 characters</p>
+        </div>
+    </form> 
+    <button class="button">Login</button>
+    </div>   
+
+    </main>
+    <script>
+        let icon = document.getElementById("icon");
+        let password = document.getElementById("password");
+
+        icon.onclick = function(){
+            if(password.type=="password"){
+                password.type ="text";
+                icon.src="..//img/eye-open.png"
+            }
+            else{
+                password.type = "password";
+                icon.src="..//img/eye-close.png" 
+            }
+        } 
+    
+//     let password.type = Document.getElementById("password");
+
+// button.onclick = function(){
+//     if(password, i=>8){
+
+//     }
+    
+// else("password to short");
+// }
+</script> 
+</body>
+
+</html>
